@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html manifest="/static/dof.cache.manifest">
 <head>
     <meta charset="utf-8" />
 
@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="DoF calc" />
 
-    <link rel="apple-touch-icon-precomposed" href="gm-hex-color.png" />
+    <link rel="apple-touch-icon-precomposed" href="/static/img/gm-hex-color.png" />
 <script>
 var map = {};
 
@@ -86,7 +86,7 @@ body {
 form {
     width: 16em;
     margin: auto;
-    background: #000 url(gm-hex-rounded.png) no-repeat center;
+    background: #000 url(/static/img/gm-hex-rounded.png) no-repeat center;
     text-align: left;
 }
 dl {
@@ -115,10 +115,10 @@ input {
     -moz-appearance: textfield;
     -webkit-appearance: textfield;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 option {
     direction: ltr;
@@ -175,6 +175,7 @@ dd {
             <option value="0.018">APS-C Canon</option>
             <option value="0.019">APS-C</option>
             <option value="0.029">Plein format</option>
+            <option value="0.015">μ4/3</option>
         </select></dd>
 
         <dt>Début de la zone nette</dt>
@@ -189,4 +190,3 @@ dd {
 </form>
 </body>
 </html>
-
